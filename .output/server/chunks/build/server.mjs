@@ -27169,7 +27169,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CogiV3jo.mjs').then((m) => m.default || m)
+    component: () => import('./index-Cep6cw7u.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

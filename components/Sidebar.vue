@@ -4,9 +4,10 @@
     v-model="drawer"
     :mini-variant="mini"
     permanent
-    mini-variant-width="48"
     @mouseenter="expand"
     @mouseleave="collapse"
+    mini-variant-width="80"  <!-- ширина мини-версии -->
+    width="256"
   >
     <v-list>
       <v-list-item link>
@@ -56,7 +57,7 @@ const props = defineProps({
 })
 
 const drawer = ref(props.drawer)
-const mini = ref(true)
+const mini = ref(false)
 const expanded = ref(false)
 
 watch(() => props.drawer, (val) => {
@@ -75,3 +76,9 @@ const toggleExpanded = () => {
   expanded.value = !expanded.value
 }
 </script>
+
+<style scoped>
+.v-navigation-drawer--mini-variant {
+  width: 80px !important;
+}
+</style>

@@ -2,4 +2,4 @@ const VTextField = ".v-text-field input{color:inherit;flex:1;min-width:0;opacity
 export {
   VTextField as default
 };
-//# sourceMappingURL=VTextarea-styles-2.mjs-BpLi0qx6.js.map
+//# sourceMappingURL=VTextField-styles-1.mjs-BpLi0qx6.js.map
