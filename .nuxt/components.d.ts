@@ -1,6 +1,8 @@
 
 interface _GlobalComponents {
-      'Sidebar': typeof import("../components/Sidebar.vue")['default']
+      'EmployeeTable': typeof import("../components/EmployeeTable.vue")['default']
+    'Header': typeof import("../components/Header.vue")['default']
+    'Sidebar': typeof import("../components/Sidebar.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -22,7 +24,9 @@ interface _GlobalComponents {
     'Head': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
-      'LazySidebar': typeof import("../components/Sidebar.vue")['default']
+      'LazyEmployeeTable': typeof import("../components/EmployeeTable.vue")['default']
+    'LazyHeader': typeof import("../components/Header.vue")['default']
+    'LazySidebar': typeof import("../components/Sidebar.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -58,6 +62,8 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const EmployeeTable: typeof import("../components/EmployeeTable.vue")['default']
+export const Header: typeof import("../components/Header.vue")['default']
 export const Sidebar: typeof import("../components/Sidebar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -80,6 +86,8 @@ export const Style: typeof import("../node_modules/nuxt/dist/head/runtime/compon
 export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Head']
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
+export const LazyEmployeeTable: typeof import("../components/EmployeeTable.vue")['default']
+export const LazyHeader: typeof import("../components/Header.vue")['default']
 export const LazySidebar: typeof import("../components/Sidebar.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']

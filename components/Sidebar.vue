@@ -1,24 +1,18 @@
 <template>
   <v-card>
     <v-layout>
-      <v-navigation-drawer
-        expand-on-hover
-        rail
-        :class="{ 'drawer-expanded': drawer }"
-      >
+      
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-book" title="Журнал" value="myfiles"></v-list-item>
-          
+
           <v-list-group v-model="expanded">
             <template v-slot:activator="{ props }">
               <v-list-item
                 v-bind="props"
                 link
-              >
-                <v-list-item-icon>
-                  <v-icon>mdi-account-group</v-icon>
-                </v-list-item-icon>
-                <v-list-item-title v-if="!mini">Сотрудники</v-list-item-title>
+                prepend-icon="mdi-account-group" 
+                title="Сотрудники" 
+                value="myfiles">
               </v-list-item>
             </template>
             <v-list-item link>
@@ -33,8 +27,7 @@
           </v-list-group>
           <v-list-item prepend-icon="mdi-shield-account" title="Админ" value="starred"></v-list-item>
         </v-list>
-      </v-navigation-drawer>
-      <v-main style="height: 250px"></v-main>
+      <v-main></v-main>
     </v-layout>
   </v-card>
 </template>
@@ -53,3 +46,4 @@ const props = defineProps({
   transition: width 0.3s ease;
 }
 </style>
+
