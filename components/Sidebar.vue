@@ -55,26 +55,6 @@ import { ref, watch } from 'vue'
 const props = defineProps({
   drawer: Boolean
 })
-
-const drawer = ref(props.drawer)
-const mini = ref(false)
-const expanded = ref(false)
-
-watch(() => props.drawer, (val) => {
-  drawer.value = val
-})
-
-const expand = () => {
-  mini.value = false
-}
-
-const collapse = () => {
-  mini.value = true
-}
-
-const toggleExpanded = () => {
-  expanded.value = !expanded.value
-}
 </script>
 
 <style scoped>
