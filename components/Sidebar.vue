@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-layout>
-      
+      <v-main>
         <v-list density="compact" nav>
           <v-list-item prepend-icon="mdi-book" title="Журнал" value="myfiles"></v-list-item>
 
@@ -27,7 +27,7 @@
           </v-list-group>
           <v-list-item prepend-icon="mdi-shield-account" title="Админ" value="starred"></v-list-item>
         </v-list>
-      <v-main></v-main>
+      </v-main>
     </v-layout>
   </v-card>
 </template>
