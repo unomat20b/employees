@@ -27164,12 +27164,20 @@ async function getRouteRules(url) {
 }
 const _routes = [
   {
+    name: "cards",
+    path: "/cards",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./cards-BXch28_U.mjs').then((m) => m.default || m)
+  },
+  {
     name: "index",
     path: "/",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-Cep6cw7u.mjs').then((m) => m.default || m)
+    component: () => import('./index-9U4UHOik.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
