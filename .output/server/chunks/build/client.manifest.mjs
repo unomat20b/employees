@@ -6,12 +6,19 @@ const client_manifest = {
     "file": "vuetify-components.Dm1-gxh4.css",
     "src": "_!~{002}~.js"
   },
-  "_BG4JTBpX.js": {
+  "_!~{008}~.js": {
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true,
+    "file": "Header.BG2L5bnp.css",
+    "src": "_!~{008}~.js"
+  },
+  "_CrDkFzq-.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BG4JTBpX.js",
+    "file": "CrDkFzq-.js",
     "name": "vuetify-components",
     "css": [
       "vuetify-components.Dm1-gxh4.css"
@@ -23,17 +30,38 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_DBe37asx.js": {
+  "_SKaeSPQ7.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DBe37asx.js",
+    "file": "SKaeSPQ7.js",
     "name": "vue.f36acd1f",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BG4JTBpX.js"
+      "_CrDkFzq-.js"
     ]
+  },
+  "_k-n6-p3P.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "k-n6-p3P.js",
+    "name": "Header",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_CrDkFzq-.js"
+    ],
+    "css": [
+      "Header.BG2L5bnp.css"
+    ]
+  },
+  "Header.BG2L5bnp.css": {
+    "file": "Header.BG2L5bnp.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
   },
   "node_modules/@mdi/font/fonts/materialdesignicons-webfont.eot": {
     "resourceType": "font",
@@ -64,14 +92,14 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CkwGIAZ1.js",
+    "file": "D7FPbCun.js",
     "name": "error-404",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_BG4JTBpX.js",
-      "_DBe37asx.js"
+      "_CrDkFzq-.js",
+      "_SKaeSPQ7.js"
     ],
     "css": []
   },
@@ -86,14 +114,14 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DbHL95RP.js",
+    "file": "CSOAS1ux.js",
     "name": "error-500",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DBe37asx.js",
+      "_SKaeSPQ7.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_BG4JTBpX.js"
+      "_CrDkFzq-.js"
     ],
     "css": []
   },
@@ -108,12 +136,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Db48MdM6.js",
+    "file": "B-LPKmOl.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "imports": [
-      "_BG4JTBpX.js"
+      "_CrDkFzq-.js"
     ],
     "dynamicImports": [
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
@@ -130,25 +158,46 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
+  "pages/Settings.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DpmBsJ5b.js",
+    "name": "Settings",
+    "src": "pages/Settings.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_k-n6-p3P.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_CrDkFzq-.js"
+    ],
+    "css": []
+  },
+  "Settings.BzegEo8Q.css": {
+    "file": "Settings.BzegEo8Q.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "C9FDzLA9.js",
+    "file": "CNFuTIRP.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_BG4JTBpX.js"
+      "_k-n6-p3P.js",
+      "_CrDkFzq-.js",
+      "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": [
-      "index.D9rgR57I.css"
-    ]
+    "css": []
   },
-  "index.D9rgR57I.css": {
-    "file": "index.D9rgR57I.css",
+  "index.DhNU3f-U.css": {
+    "file": "index.DhNU3f-U.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
