@@ -2,13 +2,13 @@
     <v-container>
       <v-row>
         <!-- Карточка "Пользователь" -->
-        <v-col cols="12" md="6">
+        <v-col cols="6" sm="10" md="4">
           <v-card outlined>
-            <v-card-title>
-              <v-icon left>mdi-account-circle</v-icon> Пользователь
+            <v-card-title style="padding-left: 25px;">
+              <v-icon left style="margin-right: 20px;">mdi-account-circle</v-icon> Пользователь
             </v-card-title>
             <v-card-text>
-              <v-list>
+              <v-list style="padding-left: 50px;">
                 <v-list-item @click="openDialog('ФИО')">
                   <v-list-item-content>{{ fields['ФИО'] || 'ФИО'}}</v-list-item-content>
                 </v-list-item>
@@ -23,13 +23,13 @@
           </v-card>
         </v-col>
         <!-- Карточка "Компания" -->
-        <v-col cols="12" md="6">
+        <v-col cols="6" md="4">
           <v-card outlined>
-            <v-card-title>
-              <v-icon left>mdi-domain</v-icon> Компания
+            <v-card-title style="padding-left: 25px;">
+                <v-icon left style="margin-right: 20px;">mdi-domain</v-icon> Компания
             </v-card-title>
             <v-card-text>
-              <v-list>
+                <v-list style="padding-left: 50px;">
                 <v-list-item @click="openDialog('Адрес')">
                   <v-list-item-content>{{ fields['Адрес'] || 'Адрес'}}</v-list-item-content>
                 </v-list-item>
@@ -81,6 +81,7 @@
 <style scoped>
 .v-card {
 margin-top: 20px;
+border-radius: 16px;
 }
 
 .v-card-title {
@@ -88,7 +89,6 @@ font-weight: bold;
 }
 
 .v-list-item-content {
-font-size: 16px;
 cursor: pointer;
 }
 </style>

@@ -5,10 +5,10 @@
       >
         <template v-slot:activator="{ props }">
           <v-btn
-            color="primary"
+            color="white"
             v-bind="props"
           >
-            Dropdown
+          <v-icon size="30">mdi-account-circle</v-icon>
           </v-btn>
         </template>
   

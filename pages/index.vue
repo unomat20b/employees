@@ -9,41 +9,44 @@
             expand-on-hover
             rail
             :class="{ 'drawer-expanded': drawer }"
+            style="background-color: #C7C7C7;"
         >
             <Sidebar :drawer="drawer" />
         </v-navigation-drawer>
 
-        <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
+        <v-main 
+        class="d-flex align-center justify-center" 
+        style="min-height: 300px; 
+        background-color: #DDDCDC;">
                 <EmployeeTable :headers="headers" :employees="employees" />
         </v-main>
     </v-app>
 </template>
   
 <script setup>
-import { ref } from 'vue'
+import { nextTick } from 'vue'
+import { ref, onMounted} from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import Header from '../components/Header.vue'
 import EmployeeTable from '../components/EmployeeTable.vue'
+import { headers, employees as initialEmplayees } from '../data/emploeesData.js'
 
 const drawer = ref(false)
 
 const toggleDrawer = () => {
   drawer.value = !drawer.value
+  nextTick(() => {
+    
+  })
 }
 
-const headers = [
-  { text: 'Имя', align: 'start', value: 'name' },
-  { text: 'ID', value: 'id' },
-  { text: 'Email', value: 'email' },
-  { text: 'Телефон', value: 'phone' },
-]
+const employees = ref(initialEmplayees)
 
-const employees = ref([
-  { name: 'Роман', id: '12344556', email: 'soap@mail.ru', phone: '8-800-555-3535' },
-  { name: 'Олег', id: '21734586', email: 'some-mail@gmail.ru', phone: '8-800-555-3535' },
-  { name: 'Константин', id: '77987985', email: 'love@mail.ru', phone: '8-800-555-3535' },
-  { name: 'Евгений', id: '65229491', email: 'one@yandex.ru', phone: '8-800-555-3535' },
-])
+onMounted(() => {
+  console.log("Headers:", headers);
+  console.log("Employees:", employees.value);
+});
+
 </script>
 
 <style scoped>
