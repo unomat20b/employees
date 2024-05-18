@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar>
-            <Header :toggleDrawer="toggleDrawer" />
+            <Header :toggleDrawer="toggleDrawer" title="Сотрудники"></header>
         </v-app-bar>
 
         <v-navigation-drawer
@@ -13,19 +13,17 @@
             <Sidebar :drawer="drawer" />
         </v-navigation-drawer>
 
-        <v-main>
-            <v-container fluid>
+        <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
                 <EmployeeTable :headers="headers" :employees="employees" />
-            </v-container>
         </v-main>
     </v-app>
 </template>
   
 <script setup>
 import { ref } from 'vue'
-import Sidebar from '~/components/Sidebar.vue'
-import Header from '~/components/Header.vue'
-import EmployeeTable from '~/components/EmployeeTable.vue'
+import Sidebar from '../components/Sidebar.vue'
+import Header from '../components/Header.vue'
+import EmployeeTable from '../components/EmployeeTable.vue'
 
 const drawer = ref(false)
 
@@ -52,6 +50,4 @@ const employees = ref([
 .drawer-expanded {
   width: 256px !important;
   transition: width 0.3s ease;
-}
-
-</style>
+}</style>
