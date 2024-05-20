@@ -24,6 +24,6 @@ export default defineNuxtConfig({
   },
   ssr: true, // Включение серверного рендеринга
   app: {
-    baseURL: '/employees/' // Базовый URL для вашего приложения
+    baseURL: '/' // Базовый URL для вашего приложения
   },
 });
