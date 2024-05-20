@@ -1,20 +1,15 @@
 <template>
     <v-app>
-        <v-app-bar>
-            <Header :toggleDrawer="toggleDrawer" title="Сотрудники"></header>
-        </v-app-bar>
+        
+        <Header :title="title" />
 
-        <v-navigation-drawer
-            app
-            expand-on-hover
-            rail
-            :class="{ 'drawer-expanded': drawer }"
-        >
-            <Sidebar :drawer="drawer" />
-        </v-navigation-drawer>
+        <Sidebar />
 
-        <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
-                <EmployeeTable :headers="headers" :employees="employees" />
+        <v-main 
+        
+          style="min-height: 300px; 
+          background-color: #DDDCDC;">
+            <EmployeeTable :headers="headers" :employees="employees" />
         </v-main>
     </v-app>
 </template>
@@ -24,30 +19,21 @@ import { ref } from 'vue'
 import Sidebar from '../components/Sidebar.vue'
 import Header from '../components/Header.vue'
 import EmployeeTable from '../components/EmployeeTable.vue'
+import { headers, employees as initialEmplayees } from '../data/emploeesData.js'
 
-const drawer = ref(false)
-
-const toggleDrawer = () => {
-  drawer.value = !drawer.value
-}
-
-const headers = [
-  { text: 'Имя', align: 'start', value: 'name' },
-  { text: 'ID', value: 'id' },
-  { text: 'Email', value: 'email' },
-  { text: 'Телефон', value: 'phone' },
-]
-
-const employees = ref([
-  { name: 'Роман', id: '12344556', email: 'soap@mail.ru', phone: '8-800-555-3535' },
-  { name: 'Олег', id: '21734586', email: 'some-mail@gmail.ru', phone: '8-800-555-3535' },
-  { name: 'Константин', id: '77987985', email: 'love@mail.ru', phone: '8-800-555-3535' },
-  { name: 'Евгений', id: '65229491', email: 'one@yandex.ru', phone: '8-800-555-3535' },
-])
+const title = 'Сотрудники';
+const employees = ref(initialEmplayees)
 </script>
 
 <style scoped>
+.main-shrink{
+  transition: margin-left 0.3s ease;
+}
 .drawer-expanded {
   width: 256px !important;
   transition: width 0.3s ease;
 }</style>
+
+
+
+

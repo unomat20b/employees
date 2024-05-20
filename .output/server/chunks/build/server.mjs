@@ -27169,7 +27169,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-K_NxwibF.mjs').then((m) => m.default || m)
+    component: () => import('./index-BYc_r7dx.mjs').then((m) => m.default || m)
   },
   {
     name: "Settings",
@@ -27177,7 +27177,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Settings-Bs104B0S.mjs').then((m) => m.default || m)
+    component: () => import('./Settings-egQwCwW0.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

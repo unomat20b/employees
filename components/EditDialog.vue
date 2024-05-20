@@ -24,13 +24,13 @@ data() {
     return {
     dialog: false,
     dialogTitle: '',
-    inputValue: ''  // Добавлено для управления значением поля ввода
+    inputValue: '' 
     };
 },
 methods: {
     open(title, value = '') {
     this.dialogTitle = title;
-    this.inputValue = value;  // Инициализация поля ввода существующим значением, если оно есть
+    this.inputValue = value; 
     this.dialog = true;
     },
     close() {

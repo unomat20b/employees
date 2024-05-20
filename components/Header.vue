@@ -1,28 +1,24 @@
 <template>
-  <v-app-bar :elevation="2" app style="top: 0; width: 100%;">
-    <template v-slot:prepend>
-      <v-app-bar-nav-icon @click="toggleDrawer"></v-app-bar-nav-icon>
-    </template>
-    
-    <!-- Используем заголовок из props -->
-    <v-toolbar-title>{{ title }}</v-toolbar-title>
+  <v-app-bar :elevation="1" app style="top: 0; width: 100%; left: 0px; background-color: #42D392;">
 
-    <template v-if="$vuetify.display.mdAndUp">
-      <Header_button_dots_vertical />
-      <v-btn icon="mdi-filter" variant="text"></v-btn>
-    </template>
+    <v-app-bar-nav-icon @click="toggleDrawer" style="color: white"></v-app-bar-nav-icon>
+    <v-toolbar-title style="color: white">{{ title }}</v-toolbar-title>
+
+    <Header_button_avatar />
+
   </v-app-bar>
 </template>
 
 <script setup>
-import Header_button_dots_vertical from '~/components/Header_button_dots_vertical.vue'
+import { defineProps } from 'vue'
+import Header_button_avatar from '../components/Header_button_avatar.vue'
 
-// Определяем props
+const emits = defineEmits(['toggle-hover']);
+
 const props = defineProps({
-toggleDrawer: Function,
-title: String  // Добавляем prop для заголовка
+  toggleDrawer: Function,
+  drawer: Boolean,
+  title: String
 });
 </script>
 
-<style scoped>
-</style>
