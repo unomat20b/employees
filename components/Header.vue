@@ -7,13 +7,13 @@
     <v-toolbar-title style="color: white">{{ title }}</v-toolbar-title>
 
     <template v-if="$vuetify.display.mdAndUp">
-      <Header_button_dots_vertical />
+      <Header_button_avatar />
     </template>
   </v-app-bar>
 </template>
 
 <script setup>
-import Header_button_dots_vertical from '~/components/Header_button_dots_vertical.vue'
+import Header_button_avatar from '../components/Header_button_avatar.vue'
 
 const props = defineProps({
   toggleDrawer: Function,
@@ -24,3 +24,4 @@ const props = defineProps({
 <style scoped>
 
 </style>
+

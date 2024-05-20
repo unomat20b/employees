@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar>
-            <Header :toggleDrawer="toggleDrawer" title="Настройки"></header>
+            <Header title="Настройки"></header>
         </v-app-bar>
         
         <v-navigation-drawer

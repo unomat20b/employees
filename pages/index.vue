@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-app-bar>
-            <Header :toggleDrawer="toggleDrawer" title="Сотрудники"></header>
+            <Header title="Сотрудники"></header>
         </v-app-bar>
 
         <v-navigation-drawer
@@ -15,10 +15,10 @@
         </v-navigation-drawer>
 
         <v-main 
-        class="d-flex align-center justify-center" 
-        style="min-height: 300px; 
-        background-color: #DDDCDC;">
-                <EmployeeTable :headers="headers" :employees="employees" />
+          class="d-flex align-center justify-center" 
+          style="min-height: 300px; 
+          background-color: #DDDCDC;">
+            <EmployeeTable :headers="headers" :employees="employees" />
         </v-main>
     </v-app>
 </template>
@@ -54,3 +54,5 @@ onMounted(() => {
   width: 256px !important;
   transition: width 0.3s ease;
 }</style>
+
+//

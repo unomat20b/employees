@@ -16,9 +16,6 @@ export default {
     headers: Array,
     employees: Array
   },
-  mounted() {
-    console.log("EmployeeTable mounted");
-  }
 }
 </script>
 
