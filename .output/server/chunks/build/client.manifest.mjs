@@ -10,27 +10,15 @@ const client_manifest = {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "Header.BG2L5bnp.css",
+    "file": "Header.13OJMdEZ.css",
     "src": "_!~{008}~.js"
   },
-  "_1sykob9s.js": {
+  "_-4rrqc5s.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "1sykob9s.js",
-    "name": "vue.f36acd1f",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js"
-    ]
-  },
-  "_DtYR0XcN.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "file": "DtYR0XcN.js",
+    "file": "-4rrqc5s.js",
     "name": "vuetify-components",
     "css": [
       "vuetify-components.Dm1-gxh4.css"
@@ -42,23 +30,35 @@ const client_manifest = {
     "prefetch": true,
     "preload": true
   },
-  "_nmgQ-eXS.js": {
+  "_BqtQgiPx.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nmgQ-eXS.js",
+    "file": "BqtQgiPx.js",
+    "name": "vue.f36acd1f",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_-4rrqc5s.js"
+    ]
+  },
+  "_DBMpp363.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DBMpp363.js",
     "name": "Header",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js"
+      "_-4rrqc5s.js"
     ],
     "css": [
-      "Header.BG2L5bnp.css"
+      "Header.13OJMdEZ.css"
     ]
   },
-  "Header.BG2L5bnp.css": {
-    "file": "Header.BG2L5bnp.css",
+  "Header.13OJMdEZ.css": {
+    "file": "Header.13OJMdEZ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -92,14 +92,14 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B4dJd1BY.js",
+    "file": "DEQyVX2S.js",
     "name": "error-404",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js",
-      "_1sykob9s.js"
+      "_-4rrqc5s.js",
+      "_BqtQgiPx.js"
     ],
     "css": []
   },
@@ -114,14 +114,14 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B_DA2CCj.js",
+    "file": "BzAy9stg.js",
     "name": "error-500",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_1sykob9s.js",
+      "_BqtQgiPx.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js"
+      "_-4rrqc5s.js"
     ],
     "css": []
   },
@@ -136,12 +136,12 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "hHQ9NjsT.js",
+    "file": "_wzUh1S-.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "imports": [
-      "_DtYR0XcN.js"
+      "_-4rrqc5s.js"
     ],
     "dynamicImports": [
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
@@ -163,19 +163,19 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BG2i4qh8.js",
+    "file": "jj1S98pD.js",
     "name": "Settings",
     "src": "pages/Settings.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nmgQ-eXS.js",
+      "_DBMpp363.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js"
+      "_-4rrqc5s.js"
     ],
     "css": []
   },
-  "Settings.CAwc_NvH.css": {
-    "file": "Settings.CAwc_NvH.css",
+  "Settings.DcWj-m5Z.css": {
+    "file": "Settings.DcWj-m5Z.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -185,19 +185,19 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DLobokMT.js",
+    "file": "o3JzCtrO.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nmgQ-eXS.js",
+      "_DBMpp363.js",
       "node_modules/nuxt/dist/app/entry.js",
-      "_DtYR0XcN.js"
+      "_-4rrqc5s.js"
     ],
     "css": []
   },
-  "index.DgdZdXQV.css": {
-    "file": "index.DgdZdXQV.css",
+  "index.Bh2du0CI.css": {
+    "file": "index.Bh2du0CI.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true

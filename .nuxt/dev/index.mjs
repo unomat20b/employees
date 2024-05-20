@@ -80,7 +80,7 @@ const appConfig = defuFn(inlineAppConfig);
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
+    "baseURL": "/employees/",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },

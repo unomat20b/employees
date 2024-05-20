@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
   css: [
@@ -22,4 +22,8 @@ export default defineNuxtConfig({
       },
     },
   },
-})
+  ssr: true, // Включение серверного рендеринга
+  app: {
+    baseURL: '/employees/' // Базовый URL для вашего приложения
+  },
+});
