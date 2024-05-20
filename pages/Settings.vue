@@ -1,23 +1,15 @@
 <template>
     <v-app>
-        <v-app-bar>
-            <Header title="Настройки"></header>
-        </v-app-bar>
+    
+        <Header :title="title" />
         
-        <v-navigation-drawer
-            app
-            expand-on-hover
-            rail
-            :class="{ 'drawer-expanded': drawer }"
-            style="background-color: #C7C7C7;"
-        >
-            <Sidebar :drawer="drawer" />
-        </v-navigation-drawer>
+        <Sidebar />
 
         <v-main 
-            :style="{ marginLeft: contentMargin }"
-            style="background-color: #DDDCDC;">
-                <Cards />
+        class="content-area"
+        :style="{ marginLeft: contentMargin }"
+        style="background-color: #DDDCDC;">
+            <Cards />
         </v-main>
     </v-app>
 </template>
@@ -29,10 +21,7 @@ import Header from '../components/Header.vue'
 import Cards from '../components/Cards.vue';
 
 const drawer = ref(false)
-
-const toggleDrawer = () => {
-  drawer.value = !drawer.value
-}
+const title = 'Настройки';
 
 const contentMargin = computed(() => drawer.value ? '256px' : '56px');
 </script>

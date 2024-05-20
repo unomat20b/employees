@@ -23,7 +23,7 @@
           </v-card>
         </v-col>
         <!-- Карточка "Компания" -->
-        <v-col cols="6" md="4">
+        <v-col cols="6" sm="10" md="4">
           <v-card outlined>
             <v-card-title style="padding-left: 25px;">
                 <v-icon left style="margin-right: 20px;">mdi-domain</v-icon> Компания
